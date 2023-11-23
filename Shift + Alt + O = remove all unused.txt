@@ -1,5 +1,0 @@
-Shift + Alt + O => remove all unused import
-Ctrl + Shift + [ => Collapse Tag
-npx shadcn-ui@latest init
-npx shadcn-ui@latest add button
-lucide.dev
