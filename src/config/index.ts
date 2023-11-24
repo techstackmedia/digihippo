@@ -8,9 +8,7 @@ type ProductCategory = {
   }[];
 };
 
-type ProductCategoryProps = () => ProductCategory[];
-
-const PRODUCT_CATEGORIES: ProductCategoryProps = () => [
+const PRODUCT_CATEGORIES: ProductCategory[] = [
   {
     label: 'UI Kits',
     value: 'ui_kits',
