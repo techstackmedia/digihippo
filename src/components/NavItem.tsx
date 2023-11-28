@@ -25,12 +25,12 @@ const NavItem = ({ category, handleOpen, isAnyOpen, isOpen }: NavItemProps) => {
           onClick={handleOpen}
           variant={isOpen ? 'secondary' : 'ghost'}
         >
-          {category.label}{' '}
+          {category.label}
           <ChevronDown
             className={cn('h-4 w-4 transition-all text-muted-foreground', {
               '-rotate-180': isOpen,
             })}
-          />{' '}
+          />
         </Button>
       </div>
 
@@ -65,7 +65,7 @@ const NavItem = ({ category, handleOpen, isAnyOpen, isOpen }: NavItemProps) => {
                           alt='product category image'
                           fill
                           className='object-cover object-center'
-                          sizes={"(max-Width: 312px) 33vw"}
+                          sizes={'(max-Width: 312px) 33vw'}
                         />
                       </div>
                       <Link
@@ -74,7 +74,9 @@ const NavItem = ({ category, handleOpen, isAnyOpen, isOpen }: NavItemProps) => {
                       >
                         {item.name}
                       </Link>
-                      <p className='mt-1' aria-hidden='true'>Show now</p>
+                      <p className='mt-1' aria-hidden='true'>
+                        Show now
+                      </p>
                     </div>
                   ))}
                 </div>
